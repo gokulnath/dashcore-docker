@@ -4,8 +4,9 @@ MAINTAINER kp <dockerkp@gmail.com>
 WORKDIR /root
 RUN apt update
 RUN apt-get install -y wget
-RUN wget https://www.dash.org/binaries/dashcore-0.12.2.1-linux64.tar.gz
-RUN tar -zvxf dashcore-0.12.2.1-linux64.tar.gz
+RUN wget https://www.dash.org/binaries/dashcore-0.12.2.3-linux64.tar.gz
+RUN tar -zvxf dashcore-0.12.2.3-linux64.tar.gz
+RUN ls
 RUN mv dashcore-0.12.2 dashcore
 RUN cp dashcore/bin/* /usr/local/bin
 
